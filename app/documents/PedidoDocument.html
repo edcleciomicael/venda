@@ -1,0 +1,54 @@
+<br>
+<br>
+
+<table class="mce-table" style="border-collapse: collapse; border: 1px solid black; height: 118px;" border="1" width="850" cellspacing="0" cellpadding="5">
+   <tbody>
+      <tr>
+         <td style="width: 411px; text-align: center; background: #c0c0c0" colspan="2"><strong>ID: {$id}</strong></td>
+      </tr>
+      <tr>
+         <td style="width: 411px;"><strong>Cliente</strong></td>
+         <td style="width: 413px;">{$cliente_id} - {$cliente->nome}</td>
+      </tr>
+      <tr>
+         <td style="width: 411px;"><strong>Data</strong></td>
+         <td style="width: 413px;">{$dt_pedido}</td>
+      </tr>
+      <tr>
+         <td style="width: 411px;"><strong>Valor</strong></td>
+         <td style="width: 413px;">{$valor_total}</td>
+      </tr>
+   </tbody>
+</table>
+
+<br>
+
+<table data-detailmodel="PedidoItem" class="mce-table" style="border-collapse: collapse; border: 1px solid #929292; height: 75px;" border="1" width="850" cellspacing="0" cellpadding="3">
+   <thead>
+      <tr style="background-color: #96c0e6;">
+         <th style="width: 68px;">Id</th>
+         <th style="width: 158px;">Produto Id</th>
+         <th style="width: 171px;">Produto</th>
+         <th style="width: 244px;text-align:center">Quantidade</th>
+         <th style="width: 170px;text-align:right">Valor </th>
+      </tr>
+   </thead>
+   <tbody>
+      <tr style="background-color: #f0f0f0;">
+         <td style="width: 68px;">{$id}</td>
+         <td style="width: 158px;">{$produto_id}</td>
+         <td style="width: 171px;">{$produto->nome}</td>
+         <td style="width: 244px;text-align:center">{$quantidade}</td>
+         <td style="width: 170px;text-align:right">{$valor} </td>
+      </tr>
+   </tbody>
+   <tfoot>
+      <tr style="background-color: #cce3fb;">
+         <td style="width: 68px;"> </td>
+         <td style="width: 158px;"> </td>
+         <td style="width: 171px;"> </td>
+         <td style="width: 244px;text-align:center">sum({$quantidade})</td>
+         <td style="width: 170px;text-align:right">sum({$valor}) </td>
+      </tr>
+   </tfoot>
+</table>

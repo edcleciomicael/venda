@@ -1,0 +1,19 @@
+Cliente 
+	Novo Cliente
+	Alteração de Cliente
+	Exclusão de Cliente
+
+Call Center
+	Lista do dia
+
+Gestão de Vendas
+	Venda do dia
+	Venda do mês
+
+Controle de estoque
+	Produtos
+	Cadastramentos
+	Quantidades
+
+Gerenciamento de Vendas
+	Sistema de nota fiscal eletônica
